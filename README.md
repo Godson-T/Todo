@@ -23,7 +23,7 @@ This project is designed to practice CRUD operations (Create, Read, Update, Dele
 ## 📂 Project Structure
 Todo/<br>
 ├── app.py<br>                  
-├── templates/ <br>            
+├── templates/<br>            
 │   ├── base.html<br> 
 │   └── index.html<br> 
 ├── static/<br>                  
