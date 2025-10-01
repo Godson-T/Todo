@@ -21,14 +21,13 @@ This project is designed to practice CRUD operations (Create, Read, Update, Dele
 ---
 
 ## 📂 Project Structure
-Todo/
-│── app.py 
-│── templates/ 
+├── app.py # Main Flask application
+├── templates/ # HTML templates
 │ ├── index.html
 │ └── base.html
-│── static/ 
-│── requirements.txt 
-│── README.md 
+├── static/ # CSS/JS files
+├── requirements.txt # Project dependencies
+└── README.md # Project documentatio
 
 ---
 
