@@ -7,7 +7,7 @@ This project is designed to practice CRUD operations (Create, Read, Update, Dele
 
 ## 🚀 Features
 - Add new tasks  
-- Mark tasks as complete ✅  
+- Mark tasks as complete 
 - Edit or delete tasks  
 - Simple and clean UI  
 
@@ -22,13 +22,13 @@ This project is designed to practice CRUD operations (Create, Read, Update, Dele
 
 ## 📂 Project Structure
 Todo/
-│── app.py # Main Flask application
-│── templates/ # HTML templates
+│── app.py 
+│── templates/ 
 │ ├── index.html
 │ └── base.html
-│── static/ # CSS/JS files
-│── requirements.txt # Project dependencies
-│── README.md # Project documentation
+│── static/ 
+│── requirements.txt 
+│── README.md 
 
 ---
 
