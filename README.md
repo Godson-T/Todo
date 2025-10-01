@@ -22,7 +22,7 @@ This project is designed to practice CRUD operations (Create, Read, Update, Dele
 
 ## 📂 Project Structure
 Todo/
-├── app.py                  # Main Flask application
+├── app.py<br>                  # Main Flask application
 ├── templates/              # HTML templates
 │   ├── base.html
 │   └── index.html
