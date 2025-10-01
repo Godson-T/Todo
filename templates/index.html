@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <h1>Task Manager</h1>
+        
+        <!-- Task Table -->
+        {% if tasks|length > 0 %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                <tr>
+                    <td>{{ task.content }}</td>
+                    <td>{{ task.date_created.date() }}</td>
+                    <td>
+                        <a href="/update/{{ task.id }}" class="btn update">Update</a>
+                        <a href="/delete/{{ task.id }}" class="btn delete">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="no-task">No tasks yet! Add your first task below ✨</p>
+        {% endif %}
+        
+        <!-- Add Task Form -->
+        <form action="/" method="POST" class="form">
+            <input type="text" name="content" placeholder="Add your task..." class="task-input">
+            <input type="submit" value="Add Task" class="submit-btn">
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
+        </form>
+    </div>
+</div>
+{% endblock %}

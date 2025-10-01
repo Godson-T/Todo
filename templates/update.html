@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Update Task {{ task.id }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <h1>Update Task #{{ task.id }}</h1>
+        
+        <form action="/update/{{ task.id }}" method="POST" class="form">
+            <input type="text" name="content" id="content" value="{{ task.content }}" class="task-input">
+            <input type="submit" value="Update Task" class="submit-btn">
+        </form>
+    </div>
+</div>
+{% endblock %}
